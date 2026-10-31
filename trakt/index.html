@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="robots" content="noindex">
+<title>Back to Lumi</title>
+<!-- Trakt sends the one-time sign-in code here (https only); this hands it to the Lumi app.
+     The code is useless without the PKCE verifier that never leaves the app. -->
+<script>location.replace("lumi://trakt" + location.search);</script>
+<p style="font-family:-apple-system,sans-serif;text-align:center;margin-top:30vh">
+  <a href="#" onclick="location.replace('lumi://trakt'+location.search);return false">Back to Lumi</a>
+</p>
